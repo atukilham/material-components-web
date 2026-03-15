@@ -425,6 +425,6 @@ export class MDCList extends MDCComponent<MDCListFoundation> {
     // this.foundation.handleClick(
         // index, matches(target, strings.CHECKBOX_RADIO_SELECTOR), event);
     const toggleCheckbox = !matches(target, strings.CHECKBOX_RADIO_SELECTOR);
-    this.foundation.handleClick(index, toggleCheckbox, evt);
+    this.foundation.handleClick(index, !toggleCheckbox, evt);
   }
 }
